@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFTDotNetDetour", "AFT-DotNetDetour\AFTDotNetDetour.csproj", "{86917DDA-2F5A-4FF0-9AEA-A515CF7BFCF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86917DDA-2F5A-4FF0-9AEA-A515CF7BFCF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86917DDA-2F5A-4FF0-9AEA-A515CF7BFCF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86917DDA-2F5A-4FF0-9AEA-A515CF7BFCF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86917DDA-2F5A-4FF0-9AEA-A515CF7BFCF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18110AD1-38E3-4549-BB2C-41DCC2128DC8}
+	EndGlobalSection
+EndGlobal

@@ -11,12 +11,12 @@ namespace AFT_DotNetDetour.AFTHookEvents
 {
     public class Demo : IMethodHook
     {
-        [HookMethod("WPFLauncher.Manager.Login.anh")]
+        [HookMethod("WPFLauncher.Manager.Login.ano")]
         private bool e()
         {
             AFTClient.send("[AFT]Injection successful");
             
-            CustomLoadingWindow.f(delegate{qw.n("{ AFT }:注入成功！");}, "加载中...");
+            CustomLoadingWindow.f(delegate{rd.n("{ AFT }:载入成功-盒子版本:1.8.19");}, "加载中...");
             AFTClient.send("AFT Loading succeeded");
             return e_Original();
         }

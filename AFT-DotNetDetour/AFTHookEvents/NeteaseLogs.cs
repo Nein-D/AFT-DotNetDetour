@@ -2,18 +2,23 @@
 
 
 namespace AFT_DotNetDetour.AFTHookEvents 
-{ 
-internal class Func : IMethodHook
+{
+	internal class Func : IMethodHook
 	{
-		[HookMethod("WPFLauncher.bb", null, null)]
-		public static void h(string sn, string so)
+		[HookMethod("WPFLauncher.bc", null, null)]
+		public static void h(string ti, string tj)
 		{
-			AFTClient.send("h | " + sn, so);
+			AFTClient.send("h | " + ti, tj);
 		}
-		[HookMethod("WPFLauncher.bb", null, null)]
-		public static void j(string sn, string so)
+		[HookMethod("WPFLauncher.bc", null, null)]
+		public static void j(string tm, string tn)
 		{
-			AFTClient.send("j | " + sn, so);
+			AFTClient.send("j | " + tm, tn);
 		}
+		[HookMethod("WPFLauncher.bc", null, null)]
+		public static void i(string tk, string tl)
+        {
+        }
+
 	}
 }

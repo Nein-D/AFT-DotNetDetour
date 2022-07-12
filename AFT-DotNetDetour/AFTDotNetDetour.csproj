@@ -71,8 +71,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
-    <Reference Include="WPFLauncher-cleaned-1.8.14.48150">
-      <HintPath>..\..\..\网易爆破工具\Dumps\1.8.14.48150\WPFLauncher-cleaned-1.8.14.48150.exe</HintPath>
+    <Reference Include="WPFLauncher-cleaned">
+      <HintPath>..\..\..\网易爆破工具\Dumps\1.8.19.51085\WPFLauncher-cleaned.exe</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

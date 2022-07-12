@@ -8,7 +8,17 @@ namespace AFT_DotNetDetour.AFTHookEvents
 	internal class Virtual : IMethodHook
 	{
 
-		[HookMethod("WPFLauncher.Manager.Log.Util.amx", null, null)]
+		public class fuck_CG : IMethodHook
+		{
+			[HookMethod("WPFLauncher.Manager.Configuration.anz", null, null)]
+			private static bool get_PlayCG()
+			{
+				return false;
+			}
+		}
+
+
+	[HookMethod("WPFLauncher.Manager.Log.Util.ane", null, null)]
 		public static string b()
 		{
 			string text = "";
@@ -37,7 +47,7 @@ namespace AFT_DotNetDetour.AFTHookEvents
 			return null;
 		}
 
-		[HookMethod("WPFLauncher.Manager.ake", "f", null)]
+		[HookMethod("WPFLauncher.Manager.akl", "f", null)]
 		public static string DiskId()
 		{
 			string text = "";
@@ -65,7 +75,7 @@ namespace AFT_DotNetDetour.AFTHookEvents
 		}
 
 
-		[HookMethod("WPFLauncher.Manager.ake", null, null)]
+		[HookMethod("WPFLauncher.Manager.akl", null, null)]
 		public static string d(string jmh)
 		{
 			string text = "";

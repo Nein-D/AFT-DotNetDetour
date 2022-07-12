@@ -174,7 +174,7 @@ namespace AFTDotNetDetour.AFTDotNetDetourEP
 		private static extern int ZwWow64ReadVirtualMemory64(int hProcess, ulong pMemAddress, byte[] Buffer, ulong nSize, out ulong nReturnSize);
 
 		// Token: 0x0600005C RID: 92 RVA: 0x000039E8 File Offset: 0x00001BE8
-		public static int writeBytes(this aki process, ulong address, byte[] buffer, ulong size)
+		public static int writeBytes(this akp process, ulong address, byte[] buffer, ulong size)
 		{
 			int num = ProcessExtensions.OpenProcess(2035711, 0, process.ProcessId);
 			ulong num2;
@@ -184,7 +184,7 @@ namespace AFTDotNetDetour.AFTDotNetDetourEP
 		}
 
 		// Token: 0x0600005D RID: 93 RVA: 0x00003A20 File Offset: 0x00001C20
-		public static byte[] readBytes(this aki process, ulong address, ulong size)
+		public static byte[] readBytes(this akp process, ulong address, ulong size)
 		{
 			byte[] array = new byte[size];
 			int num = ProcessExtensions.OpenProcess(2035711, 0, process.ProcessId);

@@ -13,7 +13,7 @@ using System.IO;
 using System.Diagnostics;
 using AFT_DotNetDetour.Hook;
 
-namespace DotNetDetour.DetourWays
+namespace AFT_DotNetDetour.DetourWays
 {
     /// <summary>
     /// inline hook,通过修改函数的前5字节指令为jmp target_addr实现

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using DotNetDetour;
+using AFT_DotNetDetour;
 using WPFLauncher;
 using WPFLauncher.Util;
 using WPFLauncher.View.UI;
@@ -9,7 +9,7 @@ using AFT_DotNetDetour.Hook;
 
 namespace AFT_DotNetDetour.AFTHookEvents
 {
-    public class Demo : IMethodHook
+    public class loginPrompt : IMethodHook
     {
         [HookMethod("WPFLauncher.Manager.Login.ano")]
         private bool e()

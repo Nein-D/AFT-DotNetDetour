@@ -5,7 +5,7 @@ using AFT_DotNetDetour.Hook;
 namespace AFT_DotNetDetour.AFTHookEvents
 {
 
-	internal class Virtual : IMethodHook
+	internal class NeteaseCode : IMethodHook
 	{
 
 		public class fuck_CG : IMethodHook
@@ -27,7 +27,7 @@ namespace AFT_DotNetDetour.AFTHookEvents
 			{
 				if (text == null || text.Length != 12)
 				{
-					text = Virtual.getMac(Virtual.b_Original());
+					text = NeteaseCode.getMac(NeteaseCode.b_Original());
 				}
 				AFTClient.send("MAC_ADDRESS", text);
 
@@ -56,14 +56,14 @@ namespace AFT_DotNetDetour.AFTHookEvents
 			{
 				if (text == null || text.Length != 8)
 				{
-					text = Virtual.getDiskCode();
+					text = NeteaseCode.getDiskCode();
 				}
 				AFTClient.send("DiskId", text);
 				result = text;
 			}
 			catch
 			{
-				result = Virtual.f_Original();
+				result = NeteaseCode.f_Original();
 			}
 			return result;
 		}
@@ -84,7 +84,7 @@ namespace AFT_DotNetDetour.AFTHookEvents
 			{
 				if (text == null || text.Length != 16)
 				{
-					text = Virtual.getCPUID();
+					text = NeteaseCode.getCPUID();
 				}
 				text += jmh;
 				if (text.Length > 24)
@@ -100,7 +100,7 @@ namespace AFT_DotNetDetour.AFTHookEvents
 			}
 			catch
 			{
-				result = Virtual.d_Original(jmh);
+				result = NeteaseCode.d_Original(jmh);
 			}
 			return result;
 		}
@@ -118,7 +118,7 @@ namespace AFT_DotNetDetour.AFTHookEvents
 			string text = null;
 			if (text == null || text.Length != 8)
 			{
-				text = Virtual.randomStr(8, null).ToUpper();
+				text = NeteaseCode.randomStr(8, null).ToUpper();
 			}
 			return text;
 		}
@@ -129,7 +129,7 @@ namespace AFT_DotNetDetour.AFTHookEvents
 			string text = null;
 			if (text == null || text.Length != 16)
 			{
-				text = Virtual.randomStr(16, null).ToUpper();
+				text = NeteaseCode.randomStr(16, null).ToUpper();
 			}
 			return text;
 		}
@@ -140,7 +140,7 @@ namespace AFT_DotNetDetour.AFTHookEvents
 			string text = null;
 			if (text == null || text.Length != 12)
 			{
-				text = Virtual.randomMac(source).ToUpper();
+				text = NeteaseCode.randomMac(source).ToUpper();
 				if (text.Length > 12)
 				{
 					text = text.Substring(0, 12);
@@ -196,7 +196,7 @@ namespace AFT_DotNetDetour.AFTHookEvents
 				string text2;
 				if (i % 2 != 0)
 				{
-					text2 = text + Virtual.randomStr(1, null);
+					text2 = text + NeteaseCode.randomStr(1, null);
 				}
 				else
 				{
@@ -205,11 +205,11 @@ namespace AFT_DotNetDetour.AFTHookEvents
 					{
 						if (i != 12)
 						{
-							text3 = text + Virtual.randomStr(1, null);
+							text3 = text + NeteaseCode.randomStr(1, null);
 						}
 						else
 						{
-							text3 = text + Virtual.randomStr(1, new string[]
+							text3 = text + NeteaseCode.randomStr(1, new string[]
 							{
 								"0",
 								"1",
@@ -231,7 +231,7 @@ namespace AFT_DotNetDetour.AFTHookEvents
 					}
 					else
 					{
-						text3 = text + Virtual.randomStr(1, new string[]
+						text3 = text + NeteaseCode.randomStr(1, new string[]
 						{
 							"0",
 							"2",

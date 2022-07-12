@@ -1,4 +1,4 @@
-﻿using DotNetDetour.DetourWays;
+﻿using AFT_DotNetDetour.DetourWays;
 using System;
 using System.Collections.Generic;
 using System.Linq;

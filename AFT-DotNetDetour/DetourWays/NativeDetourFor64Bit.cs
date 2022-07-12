@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DotNetDetour.DetourWays
+namespace AFT_DotNetDetour.DetourWays
 {
     public unsafe class NativeDetourFor64Bit : NativeDetourFor32Bit
     {

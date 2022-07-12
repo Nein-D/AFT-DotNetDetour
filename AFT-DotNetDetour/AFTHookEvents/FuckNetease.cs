@@ -11,7 +11,7 @@ using System.Collections.Generic;
 
 namespace AFT_DotNetDetour.AFTHookEvents
 {
-    internal class AFTHookEvents : IMethodHook
+    internal class FuckNetease : IMethodHook
     {
 
 		//Anti Anti cheating

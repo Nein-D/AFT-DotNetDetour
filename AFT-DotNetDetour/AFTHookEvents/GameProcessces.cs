@@ -13,7 +13,7 @@ using AFT_DotNetDetour.Hook;
 using AFT_DotNetDetour.Properties;
 using AFTDotNetDetour.AFTDotNetDetourEP;
 
-namespace DotNetDetour.HookEvents
+namespace AFT_DotNetDetour.AFTHookEvents
 {
     // Token: 0x02000013 RID: 19
     internal class GameProcesses : IMethodHook

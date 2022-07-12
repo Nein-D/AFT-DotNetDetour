@@ -3,7 +3,7 @@
 
 namespace AFT_DotNetDetour.AFTHookEvents 
 {
-	internal class Func : IMethodHook
+	internal class NeteaseLogs : IMethodHook
 	{
 		[HookMethod("WPFLauncher.bc", null, null)]
 		public static void h(string ti, string tj)

@@ -1,23 +1,18 @@
-﻿using System;
-using System.IO;
-using AFT_DotNetDetour;
-using WPFLauncher;
-using WPFLauncher.Util;
+﻿using WPFLauncher.Util;
 using WPFLauncher.View.UI;
-using System.Windows.Forms;
 using AFT_DotNetDetour.Hook;
 
 namespace AFT_DotNetDetour.AFTHookEvents
 {
     public class loginPrompt : IMethodHook
     {
-        [HookMethod("WPFLauncher.Manager.Login.ano")]
+        [HookMethod("WPFLauncher.Manager.Login.aod")]
         private bool e()
         {
             AFTClient.send("[AFT]Injection successful");
-            
-            CustomLoadingWindow.f(delegate{rd.n("{ AFT }:载入成功-盒子版本:1.8.19");}, "加载中...");
-            AFTClient.send("AFT Loading succeeded");
+
+            CustomLoadingWindow.f(delegate { sg.n("{ AFT }: 载入成功 #1.9.8.3.19102"); }, "注入中，请稍后...");
+            AFTClient.send("AFT Loading succeeded-#");
             return e_Original();
         }
         [OriginalMethod]
